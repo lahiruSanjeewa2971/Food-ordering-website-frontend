@@ -53,6 +53,7 @@ export const useCreateCheckoutSession = () => {
 
   if (error) {
     toast.error(error.toString());
+    reset();
   }
 
   return {
